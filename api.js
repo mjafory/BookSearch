@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 	function searchBooks(searchTerm) {
-		const apiKey = 'AIzaSyCaV_YECHs9l4-7JIv6NtcpuACJU0fFFdQ';
+		const apiKey = 'AIzaSyCaV_YECHs9l4-7JIv6NtcpuACJU0fFFdQ'; //Replace 'YOUR_API_KEY'
 		const apiUrl = `https://www.googleapis.com/books/v1/volumes?q=${searchTerm}&key=${apiKey}`;
 
 		fetch(apiUrl)

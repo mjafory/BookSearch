@@ -18,7 +18,7 @@ To use this app, you need a Google Books API key. Follow these steps to obtain y
 4. Search for "Books API" and enable it for your project.
 5. Once enabled, go to "Credentials" in the left sidebar.
 6. Create credentials by selecting "Create credentials" and choosing "API key."
-7. Copy the generated API key and replace the placeholder in the `searchBooks` function in the `index.html` file with your API key.
+7. Copy the generated API key and replace the placeholder in the `searchBooks` function in the `api.js` file with your API key.
 
 ## Code Structure
 - **HTML:** The main structure of the web page, including the form and search results container.
