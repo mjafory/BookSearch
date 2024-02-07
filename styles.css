@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-image: url(bg.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	height: 110vh;
+	background-repeat: no-repeat;
+	backdrop-filter: blur(5px);
+}
+
+header {
+	background-color: bisque;
+	color: #fff;
+	text-align: center;
+	padding: 1em;
+}
+
+.animate-charcter {
+	text-transform: uppercase;
+	background-image: linear-gradient(-225deg,
+			#231557 0%,
+			#44107a 29%,
+			#ff1361 67%,
+			#fff800 100%);
+	background-size: auto auto;
+	background-clip: border-box;
+	background-size: 200% auto;
+	color: #fff;
+	background-clip: text;
+	text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: textclip 5s linear infinite;
+	display: inline-block;
+}
+
+@keyframes textclip {
+	to {
+		background-position: 200% center;
+	}
+}
+
+
+main {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+form {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 20px;
+}
+
+h2 {
+	color: yellow;
+	font-style: oblique;
+}
+
+input {
+	width: 100%;
+	padding: 10px;
+	border-radius: 10px 0px 0px 10px;
+	border: 1px solid red;
+	box-shadow: 0px 10px 10px 0px black;
+}
+
+button {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 0px 10px 10px 0px;
+	box-shadow: 0px 10px 10px 0px black;
+}
+
+button:hover {
+	background-color: #555;
+}
+
+#searchResults {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 50px;
+}
+
+
+
+.book-card {
+	position: relative;
+	top: 60px;
+	background-color: #002A32;
+	padding: 0px;
+	height: 600px;
+	border-radius: 100px 100px 0px 0px;
+}
+
+.book-cover {
+	position: relative;
+	top: -30px;
+	left: 6%;
+	height: 200px;
+	width: 80%;
+	border: 1px solid brown;
+	padding: 10px;
+	box-shadow: 0px 0px 10px 0px black;
+
+}
+
+.book-title {
+	position: relative;
+	top: -20px;
+	color: yellow;
+	background-color: black;
+	padding: 5px;
+	margin: 0;
+	text-align: center;
+	font-size: 1rem;
+}
+
+.book-authors {
+	text-align: center;
+	color: yellowgreen;
+	padding: 10px;
+	margin: 0;
+	font-size: 12px;
+}
+
+
+.book-description {
+	text-align: justify;
+	color: white;
+	font-size: 13px;
+	padding: 10px;
+	margin: 0;
+}
+
+
+.book-rating {
+	color: wheat;
+	position: relative;
+	left: 10px;
+	background-color: darkmagenta;
+	color: yellow;
+	width: 100px;
+	text-align: center;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 12px;
+
+}
+
+.book-url {
+	position: relative;
+	top: -40px;
+	right: 10px;
+	float: right;
+	text-decoration: none;
+	background-color: firebrick;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 12px;
+}
+
+
+
+footer {
+	background-color: #333;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+	padding: 0px;
+	position: relative;
+	bottom: -61vh;
+	margin: 0px;
+	width: auto;
+}
+
+@media screen and (max-width:1080px) {
+
+	.book-card {
+		padding: 0px;
+		height: 580px;
+
+	}
+
+	.book-cover {
+		position: relative;
+		left: 16%;
+		margin-top: 10px;
+		width: 60%;
+		height: 250px;
+	}
+
+
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Book Recommendation App</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+	<header>
+		<h3 class="animate-charcter"> <i class="fas fa-book-reader fa-3x mx-3"></i><br> Book Recommendation</h3>
+	</header>
+
+	<main class="animate__animated animate__backInDown">
+		<section>
+			<h2>Search for Books</h2>
+			<form id="bookSearchForm">
+				<input type="text" id="searchInput" name="searchInput" placeholder="Enter search keywords" required>
+				<button type="submit">Search</button>
+			</form>
+		</section>
+
+		<section id="searchResults" class="animate__animated animate__zoomInDown">
+
+		</section>
+	</main>
+
+
+	<footer>
+		&copy; 2024 Book Recommendation App
+	</footer>
+
+	<script src="api.js"></script>
+</body>
+
+</html>
